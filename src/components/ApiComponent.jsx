@@ -34,7 +34,15 @@ if(error){
 }
 return(
     <div>
-        
+        <h1>Liste des posts</h1>
+        {data.map((post)=>(
+            <div key={post.id}>
+                <h2>{post.title}</h2>
+                <button>Supprimer</button>
+                </div>
+
+        )
+        )}
     </div>
 )
   
